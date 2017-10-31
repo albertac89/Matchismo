@@ -173,6 +173,15 @@
                                     <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zcb-HF-NyL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyr-4t-3rl">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="559" width="252" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -189,6 +198,7 @@
                                 <exclude reference="zxr-VC-WdH"/>
                                 <exclude reference="5Rh-Ea-Nu6"/>
                                 <exclude reference="hch-bg-3FA"/>
+                                <exclude reference="eyr-4t-3rl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -205,9 +215,25 @@
                                 <include reference="zxr-VC-WdH"/>
                                 <include reference="5Rh-Ea-Nu6"/>
                                 <include reference="hch-bg-3FA"/>
+                                <include reference="eyr-4t-3rl"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="eyr-4t-3rl" id="ZHa-kh-wwv"/>
+                        <outletCollection property="cardButtons" destination="9T3-2E-YfN" id="a6V-bH-oZl"/>
+                        <outletCollection property="cardButtons" destination="PhI-H4-cTu" id="WAU-Sn-Z5h"/>
+                        <outletCollection property="cardButtons" destination="cTv-ar-Cwt" id="1c6-Ei-SUe"/>
+                        <outletCollection property="cardButtons" destination="bqy-m6-lpf" id="Ubu-5N-dOi"/>
+                        <outletCollection property="cardButtons" destination="9Pi-6d-wdl" id="OcQ-u4-82o"/>
+                        <outletCollection property="cardButtons" destination="QgU-sg-ZyE" id="taw-kh-BPd"/>
+                        <outletCollection property="cardButtons" destination="5dn-cP-ssO" id="61B-8n-pzv"/>
+                        <outletCollection property="cardButtons" destination="mB5-g9-NO8" id="lN4-xm-sYZ"/>
+                        <outletCollection property="cardButtons" destination="QiH-cX-lAd" id="pgD-Od-uo1"/>
+                        <outletCollection property="cardButtons" destination="zxr-VC-WdH" id="hMo-86-M53"/>
+                        <outletCollection property="cardButtons" destination="5Rh-Ea-Nu6" id="D4q-HJ-OdK"/>
+                        <outletCollection property="cardButtons" destination="hch-bg-3FA" id="lev-7T-WQb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
