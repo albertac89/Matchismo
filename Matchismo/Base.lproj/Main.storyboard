@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Playing Card Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PlayingCardGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -54,19 +54,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMJ-BH-ylB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqy-m6-lpf">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" backgroundImage="cardback">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="304" y="20" width="76" height="119"/>
-                                </variation>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hba-jf-phG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pi-6d-wdl">
@@ -185,6 +172,19 @@
                                     <rect key="frame" x="20" y="435" width="252" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqy-m6-lpf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="304" y="20" width="76" height="119"/>
+                                </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hba-jf-phG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -192,7 +192,6 @@
                                 <exclude reference="9T3-2E-YfN"/>
                                 <exclude reference="PhI-H4-cTu"/>
                                 <exclude reference="cTv-ar-Cwt"/>
-                                <exclude reference="bqy-m6-lpf"/>
                                 <exclude reference="9Pi-6d-wdl"/>
                                 <exclude reference="QgU-sg-ZyE"/>
                                 <exclude reference="5dn-cP-ssO"/>
@@ -202,6 +201,7 @@
                                 <exclude reference="5Rh-Ea-Nu6"/>
                                 <exclude reference="hch-bg-3FA"/>
                                 <exclude reference="eyr-4t-3rl"/>
+                                <exclude reference="bqy-m6-lpf"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -209,7 +209,6 @@
                                 <include reference="9T3-2E-YfN"/>
                                 <include reference="PhI-H4-cTu"/>
                                 <include reference="cTv-ar-Cwt"/>
-                                <include reference="bqy-m6-lpf"/>
                                 <include reference="9Pi-6d-wdl"/>
                                 <include reference="QgU-sg-ZyE"/>
                                 <include reference="5dn-cP-ssO"/>
@@ -219,6 +218,7 @@
                                 <include reference="5Rh-Ea-Nu6"/>
                                 <include reference="hch-bg-3FA"/>
                                 <include reference="eyr-4t-3rl"/>
+                                <include reference="bqy-m6-lpf"/>
                             </mask>
                         </variation>
                     </view>
